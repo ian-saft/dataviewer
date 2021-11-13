@@ -14,6 +14,7 @@ const routes = Router();
 
 const userController = new UserController();
 
+routes.post('/user/create', userController.create);
 routes.get('/user', userController.find);
 
 app.use(routes);
